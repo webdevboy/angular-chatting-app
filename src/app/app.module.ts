@@ -24,6 +24,7 @@ import { IsAllowingPipe } from './pipes/is-allowing.pipe';
 import { UserFormComponent } from './components/users/user-form/user-form.component';
 import { UserResetPasswordComponent } from './components/users/user-reset-password/user-reset-password.component';
 import { UserProfileComponent } from './components/users/user-profile/user-profile.component';
+import { PasswordStrengthBarComponent } from './components/users/password-strength-bar/password-strength-bar.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { UserProfileComponent } from './components/users/user-profile/user-profi
     IsAllowingPipe,
     UserFormComponent,
     UserResetPasswordComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    PasswordStrengthBarComponent
   ],
   imports: [
     BrowserModule,

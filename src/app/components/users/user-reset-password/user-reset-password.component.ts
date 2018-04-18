@@ -11,11 +11,14 @@ import { User } from '../../../models/user.model';
   templateUrl: './user-reset-password.component.html',
   styleUrls: ['./user-reset-password.component.scss']
 })
+
 export class UserResetPasswordComponent implements OnInit, OnDestroy {
   model: any = {};
   userId: String;
   currentUser: User;
   loading = false;
+
+  public barLabel: string = "Password strength:";
 
   private _subscribe: any;
 
